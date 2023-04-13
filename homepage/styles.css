@@ -1,0 +1,77 @@
+.navbar-brand {
+    padding: 0;
+    height:150px;
+  }
+  .navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+  }
+
+body{
+    font-family: "Merriweather", "Courier New", monospace;
+}
+
+#headline_name{
+    font-family: "Roboto Slab", monospace;
+    font-size: 75px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Karla", "Courier New", monospace;
+}
+
+.bolded {font-weight: bold;}
+
+.footer {font-family: Poppins, arial;}
+
+#social_media_footer {
+    justify-content: center;
+    font-size: x-large;
+}
+
+/*parallac scrolling from w3 schools*/
+body, html {
+    height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("pictures/brecon_beacons3.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#op {
+  color: white;
+}
+/*parallac scrolling from w3 schools END*/
+
+
+  /*classes to use webp images when available in the browser
+  .no-webp .elementWithBackgroundImage {
+    background-image: url("image.jpg");
+  }
+
+  .webp .elementWithBackgroundImage{
+    background-image: url("image.webp");
+  }
+
+  .no-js .elementWithBackgroundImage {
+    background-image: url("image.jpg");
+  }
+  */

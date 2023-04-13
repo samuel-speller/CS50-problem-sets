@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+<h3> Here is your quote </h3>
+<div>A share of {{name}} ({{ symbol }}) costs {{price}}</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Stock Name</th>
+        <th scope="col">Stock Symbol</th>
+        <th scope="col">Curent Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row"> {{name}} </td>
+        <td> {{symbol}} </td>
+        <td> {{price}} </td>
+      </tr>
+    </tbody>
+</table>
+{% endblock %}

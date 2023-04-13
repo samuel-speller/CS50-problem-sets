@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+<h2>Transaction History</h2>
+
+<table style='margin-top: 30px' class="table table-striped table-light table-hover">
+    <thead>
+      <tr>
+        <th scope="col"> Bought/Sold </th>
+        <th scope="col"> Symbol </th>
+        <th scope="col"> Shares </th>
+        <th scope="col"> Purchase/Sale Price </th>
+        <th scope="col"> Timestamp </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {% for stock in history %}
+      <tr>
+        <th scope="row"> {{ stock["bought_sold"] }} </th>
+        <td>  {{ stock["symbol"] }}  </td>
+        <td>  {{ stock["shares"] }}  </td>
+        <td>  ${{ stock["price"] }}  </td>
+        <td>  {{ stock["timestamp"] }}  </td>
+      </tr>
+      {% endfor %}
+{% endblock %}
