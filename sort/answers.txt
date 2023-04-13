@@ -1,0 +1,25 @@
+sort1 uses: bubble sort
+
+How do you know?: bubble sort is fastest when the array is already sorted as it only has to pass through the array once. It is much slower when the array is randomly sorted or reverse sorted
+
+sort2 uses: merge sort
+
+How do you know?: merge sort should take roughly the same amount of time regardless of how the array is sorted. It is faster than selection sort as O(n log n) rather than O(n^2)
+
+sort3 uses: selection sort
+
+How do you know?: With selection sort we have to iterate over each of the n elements of an array regardless of if the array is sorted or not. So the time to sort the sorted array should be roughly the same as reversed or random. It is also slower than merge sort
+
+
+times (50000 numbers)
+
+            sort1       sort2       sort3
+
+random      7.551       0.513       3.127
+
+reversed    5.823       0.597       3.199
+
+sorted      0.552       0.446       3.162
+
+
+I ran each sort multiple times and there was quite a large distribution of run times so only general patterns could be looked at (all that was needed)

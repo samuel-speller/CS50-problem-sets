@@ -1,0 +1,16 @@
+Average values from the database:
+
+SELECT AVG(energy), AVG(valence), AVG(danceability) FROM songs;
++-------------+--------------+-------------------+
+| AVG(energy) | AVG(valence) | AVG(danceability) |
++-------------+--------------+-------------------+
+| 0.65906     | 0.484443     | 0.71646           |
++-------------+--------------+-------------------+
+
+Using the above values I would characterize the listeners audio aura as Purple and Orange
+
+(Purple: This aura color pairs well with passionate music listeners.Purple auras tune in to get amped up, entertained, and moving while they navigate the twists and turns of their day.)
+(Orange: Oranges are the rebellious and bold type. They share a need for high-energy, confidence-boosting sounds.)
+
+The way i've calculated this aura might not be very representative because i've only used the averages of the values. The listener might listen to vastly different music, e.g. some slow
+and some fast, and so the average would be in the middle and i would charaterize them as liking medium tempo music; where they actually like music at the extremes, not in the middle.

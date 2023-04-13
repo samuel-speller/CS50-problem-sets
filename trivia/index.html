@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            // need to wait until the html has been fully read
+            document.addEventListener('DOMContentLoaded', function()
+            {
+                // if correct answer is clicked then change the colour of the button and write 'correct'
+                let correct = document.querySelector('#correct');
+
+                correct.addEventListener('click', function()
+                {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#response1').innerHTML = 'Correct!';
+                });
+
+                // if incorrect answers are pressed the turn button to red and write 'incorrect'
+                let incorrects = document.querySelectorAll('.incorrect');
+
+                for (let i = 0; i < incorrects.length; i++)
+                {
+                    incorrects[i].addEventListener('click', function()
+                    {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#response1').innerHTML = 'Incorrect!';
+                    });
+                }
+
+                // check second question
+                document.querySelector('#check').addEventListener('click', function()
+                {
+                    let input = document.querySelector('input');
+
+                    if (input.value == '12')
+                    {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#response2').innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#response2').innerHTML = 'Inorrect!';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>What is "cynophobia"?</h3>
+
+                <button id="correct">Fear of dogs</button>
+                <button class="incorrect">Fear of death</button>
+                <button class="incorrect">Fear of clowns</button>
+
+                <p id="response1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>How many languages are written from right to left?</h3>
+
+                <input type="text"></input type="text">
+                <button id="check">Check</button>
+
+                <p id="response2"></p>
+            </div>
+        </div>
+    </body>
+</html>
