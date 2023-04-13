@@ -1,0 +1,4 @@
+ask user for height
+if height>8 or height<1 then go back to step 1
+Iterate from 1 through height
+    on each iteration i, print i #'s and then newline
